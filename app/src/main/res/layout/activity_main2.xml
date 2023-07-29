@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+   
+    tools:context=".MainActivity">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/quiz"
+                android:layout_centerHorizontal="true"
+                />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" My Awesome Quiz"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"/>
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highscore: 0"
+        android:layout_above="@id/button_start_quiz"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="22dp"/>
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start Quiz"
+        android:layout_centerInParent="true"/>
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_below="@+id/button_start_quiz"/>
+
+
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_below="@+id/spinner_category"/>
+
+
+</RelativeLayout>
